@@ -1,0 +1,439 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+body{
+    
+    font-family: 'Montserrat', Arial, sans-serif;
+    color:white;
+    padding: 0%;
+    margin: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+
+}
+header{
+    position: fixed;
+}
+/*bouton*/
+
+#gd p{
+    font-size: 3em;
+}
+.bouton{
+	display: block;
+	margin-top: 4.5em;
+    margin-left: 6em;
+    width: 13em;
+    height: 13em;
+    border: 2px;
+    outline: none;
+    color: #fff;
+    background: rgb(38, 79, 80);
+    border-radius: 50%;
+}
+
+.bouton:before {
+    content: '';
+    background: linear-gradient(50deg, #aeaeae,#f8f8f8, #c2c2c2, #f0f0f0,#c3c3c3, #cdcdcd, #a0a0a0,#b1b1b1, #dbdbdb);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(1px);
+    width: calc(103% + 0px);
+    height: calc(103% + 1px);
+    animation: glowing 11s linear alternate-reverse infinite;
+    opacity: 1;
+    transition: opacity 0.1s ease-in;
+	border-radius: 50%;
+}
+
+.bouton:active {
+    color: rgb(182, 180, 180);
+	background-color: #000000;
+}
+
+.bouton:active:after {
+    background: transparent;
+}
+
+.bouton:hover:before {
+    opacity: 1;
+}
+
+.bouton:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 50%;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0;}
+    50% { background-position: 600% 0;}
+    100% { background-position: 0 0; }
+}
+
+
+.fondsite{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    position:fixed;
+    display: block;
+    width: 21em;
+    margin: 2em;
+    padding: 10px;
+    padding-left: 2em;
+    top:15em;
+}
+.menu ul{
+    list-style-type: none;
+}
+.menu li{
+    margin-bottom: 35px;
+    margin-left: -15px;
+}
+
+.menu a{
+    position: relative;
+    text-decoration: none;
+    font-family: 'Montserrat', Arial, sans-serif;
+    color:white;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 2px black;
+}
+
+.menu a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    background: white;
+    transition:width 0.2s ease-in-out;
+}
+
+.menu a:hover::after{
+    width:92%;
+}
+.slidehome{
+    display:block;
+    float: right;
+    position: relative;
+    top:560px;
+    bottom: 0;
+    right: 0;
+    width: 60em;
+    background-color: rgb(31, 31, 31);
+    box-shadow: 10px 10px 20px black;
+}
+
+#guillaume{
+    width: 10em;
+    float: left;
+    padding-left: 3em;
+    padding-right: 1em;
+    padding-top: 3em;
+}
+#presentation{
+    margin-top: 4em;
+    line-height: 0.4em;
+    letter-spacing: 0.2em;
+}
+.texthome{
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: white;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin: 2em;
+    text-align: justify;
+    line-height: 2em;
+    /* border-left:3px solid white; */
+}
+h1{
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size:xx-large;
+    letter-spacing: 3px;
+    font-weight:lighter;
+    color: white;
+    text-transform: uppercase;
+    border-right: 20px;
+    width: 30em;
+    padding-left: 50px;
+
+}
+
+h2{
+    font-family: 'Montserrat', Arial, sans-serif;
+    color: white;
+    font-weight:lighter;
+    padding-left: 50px;
+
+}
+
+/* FOOTER*/
+.coord{
+    display:block;
+    position:fixed;
+    width:50em;
+    bottom:20px;
+    margin-left: 0;
+}
+
+.textecoord{
+    color: white;
+    font-family: 'Montserrat', Arial, sans-serif;
+    padding-left: 100px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px black;
+}
+
+/* ICONE SCROLL*/
+.icon-scroll,
+.icon-scroll:before{
+  position: absolute;
+  left: 50%
+}
+
+.icon-scroll{
+  width: 30px;
+  height: 50px;
+  margin-left: 20em;
+  top: 0.5%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #fff;
+  background: #fff;
+  border-radius: 25px
+}
+
+.icon-scroll:before{
+  content: '';
+  width: 4px;
+  height: 8px;
+  background: rgb(47, 47, 47);
+  margin-left: -2px;
+  top: 8px;
+  border-radius: 4px;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll{
+  0%{opacity: 1;}
+  100%{opacity: 0; transform: translateY(20px);}
+}
+
+/* PROJET*/
+
+.barreformprojet{
+    background-color: white;
+    width: 525px;
+    height: 2px;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+.projet{
+    display:block;
+    position:fixed;
+    bottom: 0;
+    right: 0;
+    width: 50em;
+    height:100%;
+    background-color: cadetblue;
+}
+
+.texteprojet{
+    width:40em;
+    text-align: justify;
+    margin: auto;
+}
+
+.iconehand{
+    display: inline-flex;
+    width: 5em;
+    float: left;
+    margin-top: 70px;
+    padding: 40px;
+    filter:invert(95%);
+    -webkit-filter: invert(95%);
+    /*opacity:0;*/
+}
+
+
+/* USINE */
+
+.barreformusine{
+    background-color: white;
+    width: 655px;
+    height: 2px;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+.usine1{
+    width: 50%;
+    height: auto;
+    margin-top: 20px;
+}
+/*REALISATIONS*/
+
+.barreformreal{
+    background-color: white;
+    width: 357px;
+    height: 2px;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+.grille i{
+    font-size: 8em;
+    margin-top: 0.3em;
+    color: rgb(255, 255, 255);
+}
+.grille{
+
+    max-width: 1300px;
+    width: 100%;
+    height: auto;
+    margin-top:2em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,300px);
+    justify-content: center;
+    grid-gap:1em;
+}
+.grid-item{
+    margin-top: 2em;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+/*Desktop*/
+@media screen and (min-width: 64em){
+
+    .burger i{
+    visibility: hidden;
+    }
+
+}
+
+/*Mobile*/
+@media screen and ( max-width: 64em) {
+
+    header{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .fondsite{
+        background-color: #fff;    
+    }
+
+    i{
+        display: flex;
+        font-size: 3em;
+        margin: auto;
+        margin-bottom: 0.5em;
+    }
+
+    .logo{      
+        width: 12em;
+        position: relative;
+        padding: 1em;
+        z-index: 1;
+    }    
+
+    .logotop{
+        display: flex;
+        width: 100%;
+        justify-content: start;
+        gap: 13em;
+    }
+
+    .menu{
+        overflow: hidden;
+        position: absolute;
+        z-index: 1;
+        border-radius: 0 0 0 0;
+        width: 100%;
+        height: 0;
+        margin-top: -4em;
+        transition: 0.3s ease;
+    }
+
+    .burger:hover+.menu{
+        height: 20em;
+        display: block;
+        z-index: 10;
+        position: absolute;
+    }
+
+    .burger{
+        z-index: 10;
+        position: absolute;
+        margin-top: -4em;
+        margin-left: 90%;
+    }
+    
+   .slidehome{
+       max-width: 100%;
+       top :auto;
+   }
+   .icon-scroll{
+       display: none;
+   }
+   p{
+       max-width: 80%;
+   }
+   h1,h2{
+       max-width: 90%;
+       margin-left: auto;
+       margin-right: auto;
+       text-align: center;
+       border: 0;
+       padding: 0;
+   }
+
+   h1{
+       font-size: 1.7em;
+       text-align: center;
+   }
+   h1 br{
+       display: none;
+   }
+   .coord{
+       display: none;
+   }
+   .usine1{
+       margin-right: 25%;
+       margin-left: 25%;
+   }
+
+   .barreformprojet,.barreformreal,.barreformusine,.barreformcontact{
+       margin: auto;
+       width: 100%;
+       border: 0;
+       padding: 0;
+   }
+
+}
