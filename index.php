@@ -67,23 +67,23 @@
                 <h1>On travaille ensemble ?</h1>
                 <div class="barreformcontact"></div>
                 <img src="images/contact.jpg" alt="ordinateur" id="imagecontact">
-                <form action="/ma-page-de-traitement" method="post">
+                <form action="form.php" method="POST">
                     <div class="name">
                         <label for="name"></label>
-                        <input type="text" id="name" name="user_name" placeholder="NOM" required>
+                        <input type="text" id="name" name="name" placeholder="NOM" required>
                     </div>
                     <div class="mail">
-                        <label for="mail"></label>
-                        <input type="email" id="mail" name="user_mail" placeholder="E-MAIL" required>
+                        <label for="email"></label>
+                        <input type="email" id="mail" name="email" placeholder="E-MAIL" required>
                     </div>
                     <div id="liencontact"></div>
                     <div class="phone">
                         <label for="phone"></label>
-                        <input type="phone" id="phone" name="user_phone" placeholder="TELEPHONE" required>
+                        <input type="phone" id="phone" name="telephone" placeholder="TELEPHONE" required>
                     </div>
                     <div class="msg">
                         <label for="msg"></label>
-                        <textarea id="msg" name="user_message" placeholder="VOTRE MESSAGE" required></textarea>
+                        <textarea id="msg" name="message" placeholder="VOTRE MESSAGE" required></textarea>
                     </div>
                         <button type="submit">Envoyer</button>
                 </form>
