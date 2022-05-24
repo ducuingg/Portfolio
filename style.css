@@ -140,7 +140,9 @@ header{
     right: 0;
     width: 60em;
     background-color: rgb(20, 20, 20);
-    box-shadow: 10px 10px 20px black;
+    -webkit-box-shadow: -4px -3px 5px 0px rgba(255, 255, 255, 0.75);
+    -moz-box-shadow:    -4px -3px 5px 0px rgba(255, 255, 255, 0.75);
+    box-shadow:         -4px -3px 5px 0px rgba(255, 255, 255, 0.75);
 }
 
 #guillaume{
