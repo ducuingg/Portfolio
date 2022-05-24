@@ -245,9 +245,9 @@ h2{
 
 /* PROJET*/
 
-.barreformprojet{
+.barreformcomp{
     background-color: white;
-    width: 525px;
+    width: 23.3em;
     height: 2px;
     margin-left: 50px;
     margin-top: -20px;
@@ -269,41 +269,6 @@ h2{
     margin: auto;
 }
 
-.iconehand{
-    display: inline-flex;
-    width: 5em;
-    float: left;
-    margin-top: 70px;
-    padding: 40px;
-    filter:invert(95%);
-    -webkit-filter: invert(95%);
-    /*opacity:0;*/
-}
-
-
-/* USINE */
-
-.barreformusine{
-    background-color: white;
-    width: 655px;
-    height: 2px;
-    margin-left: 50px;
-    margin-top: -20px;
-}
-.usine1{
-    width: 50%;
-    height: auto;
-    margin-top: 20px;
-}
-/*REALISATIONS*/
-
-.barreformreal{
-    background-color: white;
-    width: 357px;
-    height: 2px;
-    margin-left: 50px;
-    margin-top: -20px;
-}
 
 .grille i{
     font-size: 8em;
