@@ -151,7 +151,7 @@ header{
 }
 #presentation{
     margin-top: 4em;
-    line-height: 0.4em;
+    line-height: auto;
     letter-spacing: 0.2em;
 }
 #presentation h2{
@@ -320,26 +320,21 @@ h2{
     .fondsite{
         background-color: #fff;    
     }
-
-    .burger i{
-        display: flex;
-        font-size: 3em;
-        margin: auto;
-        margin-bottom: 0.5em;
-    }
-
     .logo{      
-        width: 12em;
+        width: 16em;
         position: relative;
         padding: 1em;
         z-index: 1;
-    }    
-
-    .logotop{
-        display: flex;
-        width: 100%;
-        justify-content: start;
-        gap: 13em;
+    }
+    #gd p{
+       margin: auto;
+       font-size: 2em;
+    }
+    .bouton{
+        width: 6em;
+        height: 6em;
+        margin: auto;
+        margin-left: 55vw;
     }
 
     .menu{
@@ -349,27 +344,45 @@ h2{
         border-radius: 0 0 0 0;
         width: 100%;
         height: 0;
-        margin-top: -4em;
+        bottom:40%;
         transition: 0.3s ease;
+    }
+    .burger i{
+        z-index: 10;
+        position: sticky;
+        display: inline-block;
+        font-size: 3em;
+        margin-top: 4%;
+        left:4%;
+        color: white;
     }
 
     .burger:hover+.menu{
-        height: 20em;
+        height: 10em;
+        width: 100%;
         display: block;
+        margin: auto;
         z-index: 10;
         position: absolute;
+        background: rgb(38, 79, 80);
     }
 
     .burger{
         z-index: 10;
-        position: absolute;
-        margin-top: -4em;
-        margin-left: 90%;
+        left:0;
+        color: white;
     }
-    
+    #guillaume{
+        float: inherit;
+        width: 30vw;
+        margin-right: 30%;
+    }
+    #presentation h1{
+        padding-top:  6em;
+    }
    .slidehome{
        max-width: 100%;
-       top :auto;
+       top :50vh;
    }
    .icon-scroll{
        display: none;
@@ -378,7 +391,7 @@ h2{
        max-width: 80%;
    }
    h1,h2{
-       max-width: 90%;
+       max-width: 100%;
        margin-left: auto;
        margin-right: auto;
        text-align: center;
@@ -390,22 +403,30 @@ h2{
        font-size: 1.7em;
        text-align: center;
    }
-   h1 br{
-       display: none;
-   }
    .coord{
        display: none;
    }
-   .usine1{
-       margin-right: 25%;
-       margin-left: 25%;
+   .barreformcomp,.barreformcontact{
+      display: none;
    }
 
-   .barreformprojet,.barreformreal,.barreformusine,.barreformcontact{
-       margin: auto;
-       width: 100%;
-       border: 0;
-       padding: 0;
-   }
+   .grille i{
+    font-size: 5em;
+    margin-top: 0.3em;
+    color: rgb(255, 255, 255);
+    transition: 0.3s ease-in-out;
+}
+   .grille{
+
+    max-width:100%;
+    width: 100%;
+    height: auto;
+    margin-top:2em;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,11em);
+    justify-content: center;
+    grid-gap:0.3em;
+}
 
 }
