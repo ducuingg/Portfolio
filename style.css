@@ -366,7 +366,7 @@ h2{
         color: white;
     }
 
-    .burger:hover+.menu{
+    .menuopen{
         height: 10em;
         width: 100%;
         display: block;

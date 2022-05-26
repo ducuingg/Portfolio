@@ -64,4 +64,15 @@ sr.reveal('.grille',{
 
 // })
 
+function burger(){
+
+    let burger = document.querySelector('.burger i');
+    let menu = document.querySelector('.menu');
+
+    burger.addEventListener('click',(e)=>{
+        e.preventDefault();
+        menu.classList.toggle('.menuopen');
+    })
+
+}
 
