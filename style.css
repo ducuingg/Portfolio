@@ -339,20 +339,21 @@ h2{
         width: 4em;
         height: 4em;
         margin: auto;
-        top:10%;
+        top:15%;
         margin-left: 78vw;
     }
 
     .menu{
-        /* overflow: hidden; */
+        overflow: hidden;
         position: fixed;
-        z-index: 13;
+        z-index: 1;
         width: 100%;
         margin: auto;
-        height: 10em;
+        height: 0;
         top:10%;
-        transition: 0.3s ease;
+        transition: 0.5s ease;
         background: rgb(38, 79, 80);
+        
     }
     .burger i{
         z-index: 12;
@@ -364,7 +365,8 @@ h2{
         color: white;
     }
     .menuopen{
-      width: 2%;
+      height: 10em;
+      
     }
 
     .burger{

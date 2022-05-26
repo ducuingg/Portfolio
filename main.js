@@ -71,7 +71,7 @@ function burger(){
 
     burger.addEventListener('click',(e)=>{
         e.preventDefault();
-        menu.classList.toggle('.menuopen');
+        menu.classList.toggle('menuopen');
     })
 
 }
