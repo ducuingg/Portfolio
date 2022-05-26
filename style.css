@@ -164,12 +164,10 @@ a{
 .texthome{
     font-family: 'Montserrat', Arial, sans-serif;
     color: white;
-    padding-left: 1em;
-    padding-right: 1em;
-    margin: 2em;
+    margin: auto;
     text-align: justify;
     line-height: 2em;
-    /* border-left:3px solid white; */
+    width: 90%;
 }
 h1{
     font-family: 'Montserrat', Arial, sans-serif;
@@ -315,6 +313,10 @@ h2{
 /*Mobile*/
 @media screen and ( max-width: 64em) {
 
+    body{
+        overflow-x: hidden;
+    }
+
     header{
         background-color: #000000;
         z-index: 10;
@@ -341,7 +343,7 @@ h2{
         width: 4em;
         height: 4em;
         margin: auto;
-        margin-left: 65vw;
+        margin-left: 64vw;
     }
 
     .menu{
