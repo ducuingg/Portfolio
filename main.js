@@ -73,6 +73,49 @@ function burger(){
         e.preventDefault();
         menu.classList.toggle('menuopen');
     })
+    // document.addEventListener('click',(e)=>{
+    //     e.preventDefault();
+    //     if()
+    //     menu.style.display="none";
+    // })
 
 }
 burger();
+
+//MINIATURE HELP
+
+function help(){
+    let containerhelp = document.querySelector('.containerhelp');
+    let cadreservice = document.querySelectorAll('.cadreservice');
+    let contenuminiature = document.querySelector('.contenuminiature');
+    let titreminiature = document.querySelector('#titreminiature');
+    for(let i=0;i<cadreservice.length;i++){
+        cadreservice[i].addEventListener('mouseover',(e)=>{
+            e.preventDefault();
+            containerhelp.style.height="10em";
+  
+            if(i==0){
+                titreminiature.innerHTML="Développement web";
+                contenuminiature.textContent="Ceci est du texte pour la partie DEV";
+            }
+            if(i==1){
+                titreminiature.innerHTML="Projet 100% personnalisé";
+                contenuminiature.textContent="Ceci est du texte pour la partie PROJET";
+            }
+            if(i==2){
+                titreminiature.innerHTML="Accompagnement";
+                contenuminiature.textContent="Ceci est du texte pour la partie ACCOMPAGNEMENT";
+            }
+            if(i==3){
+                titreminiature.innerHTML="Maintenance";
+                contenuminiature.textContent="Ceci est du texte pour la partie MAINTENANCE";
+            }
+        })
+        cadreservice[i].addEventListener('mouseout',(e)=>{
+            e.preventDefault();
+            containerhelp.style.height="0";
+        })
+    }
+    
+}
+help();

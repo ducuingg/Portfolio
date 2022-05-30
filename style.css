@@ -135,6 +135,30 @@ a{
 .menu a:hover::after{
     width:92%;
 }
+/* HELPER------------------------------------------- */
+
+.containerhelp{
+    position: fixed;
+    bottom: 0;
+    margin-left: 2em;
+    width: 40em;
+    height: 0;
+    border-radius: 0.2em;
+    transition: 0.5s ease-in-out;
+    background-color: rgb(20, 20, 20);
+}
+.containertexte{
+    width: 90%;
+    padding-bottom: 1em;
+}
+.containertexte h3{
+    color: cadetblue;
+}
+#miniatureg{
+    float: left;
+    padding-right: 1em;
+}
+
 .slidehome{
     display:block;
     float: right;
@@ -171,7 +195,7 @@ a{
 }
 h1{
     font-family: 'Montserrat', Arial, sans-serif;
-    font-size:xx-large;
+    font-size:1.6em;
     letter-spacing: 3px;
     font-weight:lighter;
     color: white;
@@ -245,11 +269,11 @@ h2{
   100%{opacity: 0; transform: translateY(20px);}
 }
 
-/* PROJET*/
+/* COMPETENCES-----------------------------------------------------*/
 
 .barreformcomp{
     background-color: white;
-    width: 23.3em;
+    width: 19.3em;
     height: 2px;
     margin-left: 50px;
     margin-top: -20px;
@@ -273,11 +297,14 @@ h2{
 
 
 .grille i{
-    font-size: 8em;
+    margin: auto;
+    width: 2em;
+    font-size: 5em;
     margin-top: 0.3em;
     color: rgb(255, 255, 255);
     transition: 0.3s ease-in-out;
 }
+
 .grille i:hover{
     transform: scale(1.1);
     color: cadetblue;
@@ -285,7 +312,7 @@ h2{
 .grille{
 
     max-width: 1300px;
-    width: 100%;
+    width:100%;
     height: auto;
     margin-top:2em;
     text-align: center;
@@ -299,7 +326,57 @@ h2{
     -webkit-transition: all 0.5s ease;
     transition: all 0.5s ease;
 }
+/* SERVICES-----------------------------------------------------*/
+.containerservice{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 4em;
+}
+.containerservice i{
+    font-size: 3em;
+    display: block;
+    text-align: center;
+    margin: auto;
+    margin-top: 30%;
+    color:cadetblue;
+}
 
+.cadreservice{
+    width: 20em;
+    height: 15em;
+    margin: 1em;
+    border: 1px solid white;
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 0px 3px 0px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 0px 15px 0px rgba(89, 89, 89, 0.75);
+    color: white;
+    transition: 0.3s ease-in;
+}
+
+.cadreservice:hover{
+    background-color: rgb(255, 255, 255);
+    color: cadetblue;
+    box-shadow:         0px 0px 20px 0px rgba(255, 255, 255, 0.75);
+}
+.cs1:hover{
+    transform: translate(-20px,-20px);
+}
+.cs2:hover{
+    transform: translate(20px,-20px);
+}
+.cs3:hover{
+    transform: translate(-20px,20px);
+}
+.cs4:hover{
+    transform: translate(20px,20px);
+}
+.cadreservice p{
+    text-align: center;
+    margin: auto;
+    margin-top: 2em;
+    font-size: 1.3em;
+}
 
 /*Desktop*/
 @media screen and (min-width: 64em){
