@@ -398,7 +398,7 @@ h2{
     opacity: 0.5s;
     border-radius: 50% 50%;
     transform: scale(1);
-    animation: pulse 1.5s infinite ;
+    animation: pulse 3s infinite ;
     z-index: -1;
 }
 
