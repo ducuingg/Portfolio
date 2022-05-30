@@ -141,11 +141,15 @@ a{
     position: fixed;
     bottom: 0;
     margin-left:0;
-    width: 30%;
+    width: 30em;
     height: 0;
     border-radius: 0.2em;
     transition: 0.5s ease-in-out;
     background-color: rgb(20, 20, 20);
+    -webkit-box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    0px 0px 3px 0px rgba(0, 0, 0, 0.75);
+    box-shadow:         0px 0px 15px 0px rgba(0, 0, 0, 0.75);
+    z-index: 1;
 }
 .containertexte{
     width: 90%;
@@ -176,7 +180,7 @@ a{
     top:560px;
     bottom: 0;
     right: 0;
-    width: 60em;
+    width: 70%;
     background-color: rgb(20, 20, 20);
 }
 
@@ -340,7 +344,7 @@ h2{
 
 .barreformservice{
     background-color: white;
-    width: 19em;
+    width: 14em;
     height: 2px;
     margin-left: 50px;
     margin-top: -20px;
@@ -348,6 +352,8 @@ h2{
 
 .containerservice{
     display: flex;
+    width: 80%;
+    margin: auto;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 4em;
@@ -483,7 +489,7 @@ h2{
         width: 80%;
     }
    .slidehome{
-       max-width: 100%;
+       width: 100%;
        top :15vh;
    }
    .icon-scroll{
@@ -508,7 +514,7 @@ h2{
    .coord{
        display: none;
    }
-   .barreformcomp,.barreformcontact{
+   .barreformcomp,.barreformcontact,.barreformservice,.containerhelp{
       display: none;
    }
 
@@ -530,5 +536,19 @@ h2{
     justify-content: center;
     grid-gap:0.3em;
 }
+
+.cs1:hover{
+    transform: translateX(20px);
+}
+.cs2:hover{
+    transform: translateX(-20px);
+}
+.cs3:hover{
+    transform: translateX(20px);
+}
+.cs4:hover{
+    transform: translateX(-20px);
+}
+
 
 }
