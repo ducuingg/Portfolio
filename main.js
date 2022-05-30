@@ -51,9 +51,9 @@ sr.reveal('h1',{
 
 sr.reveal('.grille',{
     origin:'right',
-    distance:'250px',
+    distance:'450px',
     reset:true,
-    duration:3000
+    duration:2000
 });
 
 //ZOOM FOND SCROLL

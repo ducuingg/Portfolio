@@ -10,19 +10,12 @@ body{
     margin: 0;
     width: 100%;
     overflow-x: hidden;
-       background-image: url('images/fond1.jpg');
+    background-image: url('images/fond1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
 }
-/* .fondsite{
-    position: fixed;
-    top:0;
-    left:0;
-    width: 100%;
-    height: 100%;
-} */
 
 header{
     position: fixed;
@@ -173,13 +166,9 @@ a{
 #miniatureg{
     float: left;
     padding-right: 1em;
+    height: 10rem;
 }
-.logominiature{
-    font-size: 6em;
-    position: absolute;
-    opacity: 0.1;
-    z-index: 0;
-}
+
 .contenuminiature{
     line-height: 1.5em;
 }
@@ -188,7 +177,7 @@ a{
     display:block;
     float: right;
     position: relative;
-    top:560px;
+    top:60vh;
     bottom: 0;
     right: 0;
     width: 70%;
@@ -237,25 +226,6 @@ h2{
     font-weight:lighter;
     padding-left: 50px;
 
-}
-
-/* FOOTER*/
-.coord{
-    display:block;
-    position:fixed;
-    width:50em;
-    bottom:20px;
-    margin-left: 0;
-}
-
-.textecoord{
-    color: white;
-    font-family: 'Montserrat', Arial, sans-serif;
-    padding-left: 100px;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
-    text-shadow: 1px 1px 2px black;
 }
 
 /* ICONE SCROLL*/
@@ -379,6 +349,7 @@ h2{
 }
 
 .cadreservice{
+    position: relative;
     width: 20em;
     height: 15em;
     margin: 1em;
@@ -412,6 +383,38 @@ h2{
     margin: auto;
     margin-top: 2em;
     font-size: 1.3em;
+}
+
+.pulsar{
+    position: absolute;
+    display: block;
+    margin: auto;
+    left: 25%;
+    right: 25%;
+    top: 33%;
+    width: 5em;
+    height: 5em;
+    background-color: white;
+    opacity: 0.5s;
+    border-radius: 50% 50%;
+    transform: scale(1);
+    animation: pulse 1.5s infinite ;
+    z-index: -1;
+}
+
+@keyframes pulse{
+0%{
+transform: scale(0.9);
+box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
+}
+70%{
+    transform: scale(1);
+    box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0);
+}
+100%{
+    transform: scale(0.9);
+}
+
 }
 
 /*Desktop*/
