@@ -404,7 +404,7 @@ h2{
 
 @keyframes pulse{
 0%{
-transform: scale(0.9);
+transform: scale(0.95);
 box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
 }
 70%{
@@ -412,7 +412,7 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
     box-shadow: 0px 0px 0px 10px rgba(255, 255, 255, 0);
 }
 100%{
-    transform: scale(0.9);
+    transform: scale(0.95);
 }
 
 }

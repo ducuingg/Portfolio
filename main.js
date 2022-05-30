@@ -100,7 +100,7 @@ function help(){
   
             if(i==0){
                 titreminiature.innerHTML="Développement web";
-                contenuminiature.textContent="Je code votre site en HTML, CSS, JS (vanilla & JQuery),PHP..... Pour l'instant :)";
+                contenuminiature.textContent="Je code votre site en Html, Css, Javascript (Vanilla & JQuery),Php..... Pour l'instant :)";
             }
             if(i==1){
                 titreminiature.innerHTML="Projet 100% personnalisé";
