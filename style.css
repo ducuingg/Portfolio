@@ -337,6 +337,15 @@ h2{
     transition: all 0.5s ease;
 }
 /* SERVICES-----------------------------------------------------*/
+
+.barreformservice{
+    background-color: white;
+    width: 19em;
+    height: 2px;
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
 .containerservice{
     display: flex;
     flex-wrap: wrap;

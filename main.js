@@ -4,6 +4,7 @@ const logo = document.querySelector(".logo");
 const slidehome = document.querySelector(".slidehome");
 const iconscroll = document.querySelector(".icon-scroll");
 const barreformcomp = document.querySelector(".barreformcomp");
+const barreformservice = document.querySelector(".barreformservice");
 const barreformcontact = document.querySelector(".barreformcontact");
 const TL1 = new TimelineMax({paused:true});
 
@@ -12,6 +13,7 @@ TL1
 .staggerFrom(slidehome,1.5,{y:40,opacity:0},0.3,'-=0.8')
 .staggerFrom(iconscroll,1,{y:40,opacity:0},0.3,'-=0.8')
 .from(barreformcomp,2,{width:0,ease:"power1.out"})
+.from(barreformservice,2,{width:0,ease:"power1.out"})
 .from(barreformcontact,2,{width:0,ease:"power1.out"})
 
 TL1.play();
@@ -100,11 +102,11 @@ function help(){
             }
             if(i==1){
                 titreminiature.innerHTML="Projet 100% personnalisé";
-                contenuminiature.textContent="Confiez moi votre projet qui sera à la dimension de vos envies et votre entreprise ! Il n'y a pas de petit ou de trop gros projets !";
+                contenuminiature.textContent="Confiez moi votre projet qui sera à la dimension de vos envies et votre entreprise !";
             }
             if(i==2){
                 titreminiature.innerHTML="Accompagnement";
-                contenuminiature.textContent="Pendant toute la durée de la conception, je communique avec vous !";
+                contenuminiature.textContent="Pendant toute la durée de la conception, je communique avec vous, je vous explique les étapes, nous travaillons ensemble !";
             }
             if(i==3){
                 titreminiature.innerHTML="Maintenance";
