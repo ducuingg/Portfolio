@@ -10,13 +10,20 @@ body{
     margin: 0;
     width: 100%;
     overflow-x: hidden;
-    /* background-color: black; */
-    background-image: url('images/fond1.jpg');
+       background-image: url('images/fond1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
 }
+/* .fondsite{
+    position: fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+} */
+
 header{
     position: fixed;
 }
@@ -53,7 +60,7 @@ a{
     filter: blur(1px);
     width: calc(103% + 0px);
     height: calc(103% + 1px);
-    animation: glowing 11s linear alternate-reverse infinite;
+    animation: glowing 50s linear alternate-reverse infinite;
     opacity: 1;
     transition: opacity 0.1s ease-in;
 	border-radius: 50%;
@@ -261,7 +268,7 @@ h2{
 .icon-scroll{
     width: 30px;
     height: 50px;
-    margin-left: 26em;
+    margin-left: 40%;
     top: 0.5%;
     margin-top: -35px;
     box-shadow: inset 0 0 0 1px #fff;
