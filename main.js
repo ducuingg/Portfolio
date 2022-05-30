@@ -1,6 +1,7 @@
 
 // ANIMATION 
-const logo = document.querySelector(".logo");
+const li = document.querySelectorAll("li");
+const logo = document.querySelector("#gd");
 const slidehome = document.querySelector(".slidehome");
 const iconscroll = document.querySelector(".icon-scroll");
 const barreformcomp = document.querySelector(".barreformcomp");
@@ -10,6 +11,7 @@ const TL1 = new TimelineMax({paused:true});
 
 TL1
 .staggerFrom(logo,1,{y:-100,opacity:0},0.3)
+.staggerFrom(li,1.5,{y:40,opacity:0},0.3,'-=0.2')
 .staggerFrom(slidehome,1.5,{y:40,opacity:0},0.3,'-=0.8')
 .staggerFrom(iconscroll,1,{y:40,opacity:0},0.3,'-=0.8')
 .from(barreformcomp,2,{width:0,ease:"power1.out"})

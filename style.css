@@ -453,7 +453,7 @@ h2{
         overflow: hidden;
         position: fixed;
         z-index: 1;
-        width: 100%;
+        width: 0;
         margin: auto;
         height: 0;
         top:10%;
@@ -462,7 +462,8 @@ h2{
         
     }
       .menuopen{
-      height: 10em;
+      height: 13em;
+      width: 100%;
       
     }
 
