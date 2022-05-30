@@ -355,6 +355,22 @@ h2{
         background: rgb(38, 79, 80);
         
     }
+      .menuopen{
+      height: 10em;
+      
+    }
+
+    ul{
+        display: block;
+        width: 100%;
+        text-align: left;
+        margin: auto;
+        padding: 1em;
+    }
+    ul a{
+        margin: auto;
+        font-size: 0.9rem;
+    }
     .burger i{
         z-index: 12;
         position: fixed;
@@ -363,10 +379,6 @@ h2{
         margin-top: 6%;
         left:4%;
         color: white;
-    }
-    .menuopen{
-      height: 10em;
-      
     }
 
     .burger{
