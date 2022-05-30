@@ -140,8 +140,8 @@ a{
 .containerhelp{
     position: fixed;
     bottom: 0;
-    margin-left: 2em;
-    width: 40em;
+    margin-left:0;
+    width: 30%;
     height: 0;
     border-radius: 0.2em;
     transition: 0.5s ease-in-out;
@@ -153,10 +153,20 @@ a{
 }
 .containertexte h3{
     color: cadetblue;
+    letter-spacing: 0.3em;
 }
 #miniatureg{
     float: left;
     padding-right: 1em;
+}
+.logominiature{
+    font-size: 6em;
+    position: absolute;
+    opacity: 0.1;
+    z-index: 0;
+}
+.contenuminiature{
+    line-height: 1.5em;
 }
 
 .slidehome{
@@ -171,7 +181,7 @@ a{
 }
 
 #guillaume{
-    width: 10em;
+    width: 9em;
     float: left;
     padding-left: 3em;
     padding-right: 1em;

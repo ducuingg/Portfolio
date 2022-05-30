@@ -96,19 +96,19 @@ function help(){
   
             if(i==0){
                 titreminiature.innerHTML="Développement web";
-                contenuminiature.textContent="Ceci est du texte pour la partie DEV";
+                contenuminiature.textContent="Je code votre site en HTML, CSS, JS (vanilla & JQuery),PHP..... Pour l'instant :)";
             }
             if(i==1){
                 titreminiature.innerHTML="Projet 100% personnalisé";
-                contenuminiature.textContent="Ceci est du texte pour la partie PROJET";
+                contenuminiature.textContent="Confiez moi votre projet qui sera à la dimension de vos envies et votre entreprise ! Il n'y a pas de petit ou de trop gros projets !";
             }
             if(i==2){
                 titreminiature.innerHTML="Accompagnement";
-                contenuminiature.textContent="Ceci est du texte pour la partie ACCOMPAGNEMENT";
+                contenuminiature.textContent="Pendant toute la durée de la conception, je communique avec vous !";
             }
             if(i==3){
                 titreminiature.innerHTML="Maintenance";
-                contenuminiature.textContent="Ceci est du texte pour la partie MAINTENANCE";
+                contenuminiature.textContent="Vous ne vous occupez de rien, je m'occupe de tout !";
             }
         })
         cadreservice[i].addEventListener('mouseout',(e)=>{
