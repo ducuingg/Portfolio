@@ -76,12 +76,13 @@ function burger(){
     burger.addEventListener('click',(e)=>{
         e.preventDefault();
         menu.classList.toggle('menuopen');
+        e.stopPropagation();
     })
-    // document.addEventListener('click',(e)=>{
-    //     e.preventDefault();
-    //     if()
-    //     menu.style.display="none";
-    // })
+
+    document.addEventListener('click',(e)=>{
+        if($(menu).hasClass('menuopen'));
+        menu.classList.remove('menuopen');
+    })
 
 }
 burger();

@@ -23,6 +23,7 @@ header{
 
 a{
     text-decoration: none;
+    color: white;
 }
 /*bouton*/
 
@@ -384,16 +385,19 @@ h2{
     margin-top: 2em;
     font-size: 1.3em;
 }
-
+.cadreservice i{
+    position: relative;
+}
 .pulsar{
     position: absolute;
     display: block;
     margin: auto;
     left: 25%;
     right: 25%;
-    top: 33%;
-    width: 5em;
-    height: 5em;
+    height: 5rem;
+    width: 5rem;
+    top:25%;
+    bottom: 25%;
     background-color: white;
     opacity: 0.5s;
     border-radius: 50% 50%;
@@ -416,7 +420,30 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
 }
 
 }
-
+.piedpage::before{
+    content: "";
+    display: block;
+    margin: auto;
+    margin-top: 2em;
+    width: 95%;
+    height: 1px;
+    background-color: white;
+}
+.piedpage{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:2em;
+    font-size: 2em;
+}
+.end p{
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+}
 /*Desktop*/
 @media screen and (min-width: 64em){
 
@@ -432,6 +459,8 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
     body{
         overflow-x: hidden;
         width: 100vw;
+        background-image: none;
+        background-color: rgb(20,20,20);
     }
 
     header{
@@ -468,15 +497,15 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
         height: 0;
         top:10%;
         transition: 0.5s ease;
-        background: rgb(38, 79, 80);
+        /* background-color: rgb(38, 79, 80); */
         
     }
-      .menuopen{
-      height: 13em;
-      width: 100%;
-      
+    .menuopen{
+        display: block;
+        background-color: rgb(38, 79, 80);
+        height: 13em;
+        width: 100%;
     }
-
     ul{
         display: block;
         width: 100%;
@@ -576,6 +605,4 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
 .cs4:hover{
     transform: translateX(-20px);
 }
-
-
 }
