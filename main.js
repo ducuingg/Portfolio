@@ -113,7 +113,7 @@ function help(){
             }
             if(i==3){
                 titreminiature.innerHTML="Maintenance";
-                contenuminiature.textContent="Vous ne vous occupez de rien, je m'occupe de tout !";
+                contenuminiature.textContent="Hébergement, mis à jour de contenu, référencement naturel : Je m'occupe de tout :)";
             }
         })
         cadreservice[i].addEventListener('mouseout',(e)=>{
