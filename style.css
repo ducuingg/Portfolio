@@ -469,7 +469,7 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
         height: 12vh;
         display: flex;
         justify-content: center;
-        width: 100%;
+        width: 100vw;
     }
 
     .fondsite{
@@ -484,8 +484,8 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
         width: 4em;
         height: 4em;
         margin: auto;
+        margin-left: 10em;
         top:15%;
-        margin-left: 78vw;
     }
 
     .menu{
@@ -545,7 +545,7 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
         width: 80%;
     }
    .slidehome{
-       width: 100%;
+       width: 100vw;
        top :15vh;
    }
    .icon-scroll{
@@ -562,7 +562,6 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
        border: 0;
        padding: 0;
    }
-
    h1{
        font-size: 1.7em;
        text-align: center;
@@ -570,7 +569,6 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
    .barreformcomp,.barreformcontact,.barreformservice,.containerhelp{
       display: none;
    }
-
    .grille i{
     font-size: 5em;
     margin-top: 0.3em;
