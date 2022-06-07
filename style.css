@@ -483,9 +483,8 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
     .bouton{
         width: 4em;
         height: 4em;
-        margin: auto;
-        margin-left: 10em;
-        top:15%;
+        bottom:3.5vh;
+        left: 12vw;
     }
 
     .menu{
@@ -493,15 +492,16 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
         position: fixed;
         z-index: 1;
         width: 100%;
-        margin: auto;
+        margin: 0;
         height: 0;
-        top:10%;
+        top:11vh;
         transition: 0.5s ease;
         /* background-color: rgb(38, 79, 80); */
         
     }
     .menuopen{
         display: block;
+        position: fixed;
         background-color: rgb(38, 79, 80);
         height: 13em;
         width: 100%;
@@ -520,10 +520,9 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
     .burger i{
         z-index: 12;
         position: fixed;
-        display: inline-block;
+        display: flex;
         font-size: 2em;
-        margin-top: 1em;
-        left:4%;
+        margin: 1em;
         color: white;
     }
 
