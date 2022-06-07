@@ -7,7 +7,7 @@ body{
     color:white;
     padding: 0;
     margin: 0;
-    width: 100%;
+    width: 100vw;
     overflow-x: hidden;
     background-image: url('images/fond1.jpg');
     background-size: cover;
@@ -456,6 +456,11 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
 /*Mobile*/
 @media screen and ( max-width: 64em) {
 
+    html{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
     body{
         overflow-x: hidden;
         width: 100vw;
@@ -464,6 +469,7 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
     }
 
     header{
+        position: fixed;
         background-color: #000000;
         z-index: 10;
         height: 12vh;
@@ -491,7 +497,7 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
         overflow: hidden;
         position: fixed;
         z-index: 1;
-        width: 100%;
+        width: 100vw;
         margin: 0;
         height: 0;
         top:11vh;
@@ -504,7 +510,7 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
         position: fixed;
         background-color: rgb(38, 79, 80);
         height: 13em;
-        width: 100%;
+        width: 100vw;
     }
     ul{
         display: block;
