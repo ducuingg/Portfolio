@@ -336,7 +336,7 @@ h2{
 
 .containerservice{
     display: flex;
-    width: 80%;
+    max-width: 60%;
     margin: auto;
     flex-wrap: wrap;
     justify-content: center;
