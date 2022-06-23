@@ -217,7 +217,6 @@ h1{
     font-weight:lighter;
     color: white;
     text-transform: uppercase;
-    border-right: 20px;
     width: 30em;
     padding-left: 50px;
 
@@ -336,7 +335,7 @@ h2{
 
 .containerservice{
     display: flex;
-    max-width: 60%;
+    max-width: 80%;
     margin: auto;
     flex-wrap: wrap;
     justify-content: center;
@@ -454,7 +453,7 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
 }
 
 /*Mobile*/
-@media screen and ( max-width: 64em) {
+@media screen and ( max-width: 70em) {
 
     html{
         width: 100vw;
@@ -481,7 +480,6 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
     .fondsite{
         background-color: #fff;    
     }
-
     #gd p{
        margin: auto;
        font-size: 1em;
@@ -538,13 +536,13 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
         color: white;
     }
     #guillaume{
-        float: inherit;
-
+        float: none;
+        display: block;
+        padding: 0;
+        margin: auto;
         max-width: 30vw;
-        margin-right: 30%;
     }
     #presentation h1{
-        padding-top:  6em;
         width: 80%;
     }
     #presentation h2{
@@ -573,6 +571,7 @@ box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.75);
    h1{
        font-size: 1.7em;
        text-align: center;
+       padding-top: none;
    }
    .barreformcomp,.barreformcontact,.barreformservice,.containerhelp{
       display: none;
