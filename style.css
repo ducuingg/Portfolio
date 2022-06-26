@@ -265,6 +265,34 @@ h2{
   0%{opacity: 1;}
   100%{opacity: 0; transform: translateY(20px);}
 }
+/* ETOILE--------------------------------------------------------- */
+
+.containeretoiles{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+
+}
+.etoile{
+    width: 0.2em;
+    height: 0.2em;
+    border-radius: 50% 50%;
+    position: fixed;
+    background-color: #fff;
+    animation : etoile 2.5s infinite alternate;
+}
+@keyframes etoile{
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.2;
+    }
+    100%{
+        opacity: 1;
+    }
+}
 
 /* COMPETENCES-----------------------------------------------------*/
 
@@ -301,7 +329,17 @@ h2{
     color: rgb(255, 255, 255);
     transition: 0.3s ease-in-out;
 }
+.adobe{
+    margin: auto;
+    width: 4em;
+    filter: invert();
+    transition: 0.3s ease-in-out;
+}
+.adobe:hover{
+    transform: scale(1.1);
+    background-color: rgb(92, 26, 26);
 
+}
 .grille i:hover{
     transform: scale(1.1);
     color: cadetblue;
